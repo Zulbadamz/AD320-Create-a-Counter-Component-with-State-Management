@@ -1,5 +1,7 @@
+'use client';
 import Image from "next/image";
 import styles from "./page.module.css";
+import UserProfile from "./components/UserProfile"; // Import the UserProfile component
 
 export default function Home() {
   return (
@@ -90,6 +92,12 @@ export default function Home() {
           </p>
         </a>
       </div>
+
+      {/* 👇 UserProfile Component Displayed Below */}
+      <div style={{ marginTop: "2rem", width: "100%" }}>
+        <UserProfile />
+      </div>
     </main>
   );
 }
+
